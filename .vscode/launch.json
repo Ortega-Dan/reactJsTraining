@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            // "file": "${workspaceFolder}/index.html",
+            "port": 9222
+        }
+    ]
+    // This is the config and here the step by step to get it working:
+    // first have no windows opened for the browser you want to debug with
+    // then do the: npm start 
+    // then close the browser window if opened
+    // then from another console do: chromium --remote-debugging-port=9222
+    // then from that window go to the url your npm start is serving ... for this example is localhost:3000
+    // then set breakpoints (if not set alrady) and launch the debugging from here ...
+    // then reload your browser window ... (to catch with the debugging since it was loaded before you started it)
+    // and there you go ... it is debbugging (vscode debugging console should be showing something, or popping up)
+}
