@@ -1,6 +1,9 @@
 
 # HOW TO DEBUG REACT FROM LINUX AND CHROMIUM
 
+## copy and paste the following (FROM RAW README.md file) into your launch.json file (after having installed "Debugger for Chrome" Microsoft extension ... and follow the instructions in the comments)
+
+### *** copy from here ***
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -13,24 +16,29 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}",
-            // "file": "${workspaceFolder}/index.html",
             "port": 9222
         }
     ]
     // This is the config and here the step by step to get it working:
-    // first have no windows opened for the browser you want to debug with
-    // then do the: npm start 
-    // then close the browser window if opened
-    // then from another console do: chromium --remote-debugging-port=9222
-    // then from that window go to the url your npm start is serving ... for this example is localhost:3000
-    // then set breakpoints (if not set alrady) and launch the debugging from here ...
-    // then reload your browser window ... (to catch with the debugging since it was loaded before you 
+    // 1) first have no windows opened for the browser you want to debug with
+    // 2) then do the: npm start 
+    // 3) then close the browser window (if automatically opened)
+    // 4) then from another terminal do: chromium --remote-debugging-port=9222
+    // 5) then from that window go to the url your npm start is serving ... for this example is localhost:3000
+    // 6) then set breakpoints (if not set already) and launch the debugging from vscode ...
+    // 7) then reload your browser window ... (to catch with the debugging since it was loaded before you 
     // started it)
-    // and there you go ... it is debbugging 
+    // 8) and there you go ... it is debbugging !
     // (vscode debugging console should be showing something, or popping up)
 }
-
+### *** end of copy (from raw README.md file) ****
+ 
+ 
+ 
  -------------------------------------------
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
